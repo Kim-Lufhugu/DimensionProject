@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using DimensionProject.Models;
 
 namespace DimensionProject
 {
@@ -26,6 +28,9 @@ namespace DimensionProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            string connectionString = Configuration.GetConnectionString("DimentionData");
+            services.AddDbContext<EmployeeContext>(opt => opt.UseSqlServer(connectionString));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
