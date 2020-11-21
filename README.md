@@ -26,5 +26,45 @@
     10. Click the DB or server to see the overview and insight on those resources
     
 ### Importing DATA from a CSV file to the SQL DB
-    1. 
+    1. Create Table
+    ```
+    CREATE TABLE EmployeeInfo (
+   EmployeeNumber INT NOT NULL,
+   Age INT NOT NULL,
+   Attrition VARCHAR(3) NOT NULL,
+   BusinessTravel VARCHAR(250) NOT NULL,
+   DailyRate INT NOT NULL,
+   Department VARCHAR(250) NOT NULL,
+   DistanceFromHome INT NOT NULL,
+   Education INT NOT NULL,
+   EducationField VARCHAR(250) NOT NULL,
+   EmployeeCount INT NOT NULL,
+   EnvironmentSatisfaction INT NOT NULL,
+   Gender VARCHAR(6) NOT NULL,
+   HourlyRate INT NOT NULL,
+   JobInvolvement INT NOT NULL,
+   JobLevel INT NOT NULL,
+   JobRole VARCHAR(250) NOT NULL,
+   JobSatisfaction INT NOT NULL,
+   MaritalStatus VARCHAR(20) NOT NULL,
+   MonthlyIncome FLOAT NOT NULL,
+   MonthlyRate FLOAT NOT NULL,
+   NumCompaniesWorked INT NOT NULL,
+   Over18 VARCHAR(1)NOT NULL,
+   OverTime VARCHAR(3) NOT NULL,
+   PercentSalaryHike FLOAT NOT NULL,
+   PerformanceRating INT NOT NULL,
+   RelationshipSatisfaction INT NOT NULL,
+   StandardHours INT NOT NULL,
+   StockOptionLevel INT NOT NULL,
+   TotalWorkingYears INT NOT NULL,
+   TrainingTimesLastYear INT NOT NULL,
+   WorkLifeBalance INT NOT NULL,
+   YearsAtCompany INT NOT NULL,
+   YearsInCurrentRole INT NOT NULL,
+   YearsSinceLastPromotion INT NOT NULL,
+   YearsWithCurrManager INT NOT NULL,
+   PRIMARY KEY (EmployeeNumber) 
+)
+```
 
