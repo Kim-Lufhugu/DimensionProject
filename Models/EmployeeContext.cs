@@ -9,6 +9,6 @@ namespace DimensionProject.Models
         {
         }
 
-        public DbSet<Employee> TodoItems { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
