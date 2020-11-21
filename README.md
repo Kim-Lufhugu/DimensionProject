@@ -20,4 +20,5 @@
   - this will take you to a new UI to configure the DB 
   - depending on your account type you will be presented with types of storage options you can choose from ranging from standard to Business Critical
   - choose the amount of storage you want
-  
+8. Once you are done you can click review and create
+9. Once a DB has been crerated you can head to resource group and view all your resources and the DB should be there too
