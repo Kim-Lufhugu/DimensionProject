@@ -28,7 +28,7 @@
 ### Importing DATA from a CSV file to the SQL DB
     1. Create Table
     ```
-    CREATE TABLE EmployeeInfo (
+    CREATE TABLE Employees (
        EmployeeNumber INT NOT NULL,
        Age INT NOT NULL,
        Attrition VARCHAR(3) NOT NULL,
